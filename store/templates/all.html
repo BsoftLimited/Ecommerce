@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Store | All Products</title>
+    </head>
+    <body>
+        <h1>
+            {% for product in products %}
+                <img src="{{MediaUrl}}{{product.image}}" />
+            {% endfor %}
+        </h1>
+    </body>
+</html>
